@@ -9,6 +9,7 @@ body {
 a {
   color: var(--color-tertiary);
   text-decoration: none;
+  font-size: 13px;
 }
 
 ul {
@@ -31,12 +32,15 @@ nav {
   height: 60px;
   text-transform: uppercase;
 
+
   .logo {
     width: 50px;
   }
 
   li {
-    padding: 0 10px;
+    padding: 0 8px;
+    @include flex-center-h;
+    flex-wrap: nowrap;
 
     a {
       padding-bottom: 3px;
@@ -54,4 +58,34 @@ nav {
   i {
     margin-right: 0.3rem;
   }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    justify-content: space-between;
+    flex-shrink: 1;
+
+    .post-add {
+      display: none;
+    }
+  }
+}
+
+@media(max-width: 636px){
+    .main-nav {
+        i {
+            display: none;
+        }
+
+     
+        .custom-mr-1 {
+            margin-right: 0.3rem;
+        }
+
+        .custom-mr-2 {
+            margin-right: 0.5rem;
+        }
+
+       
+    }
 }
