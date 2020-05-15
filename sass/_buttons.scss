@@ -1,0 +1,28 @@
+%btn-shared {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+  @include set_background(#333, #fff);
+  border: none;
+  display: inline-block;
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(0.98);
+    opacity: 0.9;
+  }
+}
+
+.btn-custom {
+  @extend %btn-shared;
+  border-radius: 5px;
+}
+
+.btn-custom-dark {
+  @extend %btn-shared;
+  @include set-background(#333, #fff);
+}
+
+.btn-custom-primary {
+  @include set-background(#d35266, #fff);
+}

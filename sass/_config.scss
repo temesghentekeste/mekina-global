@@ -1,0 +1,70 @@
+:root {
+  --base-font: 'Helvetica Neue', Arial, sans-serif;
+  --color-primary: #d35266;
+  --color-secondary: #888;
+  --color-tertiary: #383838;
+}
+
+@mixin display-flex($dirction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin flex-center-h() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//set background and text color
+@mixin set_background($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+}
+
+$space-amounts: (1, 2, 3, 4, 5);
+
+@each $space in $space-amounts {
+  .custom-m-#{$space} {
+    margin: #{$space}rem;
+  }
+  .custom-my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  .custom-mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+  .custom-mt-#{$space} {
+    margin-top: #{$space}rem;
+  }
+  .custom-mb-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+  .custom-ml-#{$space} {
+    margin-left: #{$space}rem;
+  }
+  .custom-mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
+  .custom-p-#{$space} {
+    padding: #{$space}rem;
+  }
+  .custom-py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  .custom-px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
+  .custom-pt-#{$space} {
+    padding-top: #{$space}rem;
+  }
+  .custom-pb-#{$space} {
+    padding-bottom: #{$space}rem;
+  }
+  .custom-pl-#{$space} {
+    padding-left: #{$space}rem;
+  }
+  .custom-pr-#{$space} {
+    padding-right: #{$space}rem;
+  }
+}
