@@ -1,6 +1,6 @@
 %btn-shared {
   cursor: pointer;
-  padding: 8px 15px;
+  padding: 4px 15px;
   font-weight: bold;
   @include set_background(#333, #fff);
   border: none;
@@ -13,8 +13,12 @@
   }
 }
 
-.btn-custom {
+.btn-custom,
+.btn-rounded {
   @extend %btn-shared;
+}
+
+.btn-rounded {
   border-radius: 5px;
 }
 

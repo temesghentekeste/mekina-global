@@ -18,40 +18,260 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <ul class="main-nav">
-        <li>
-          <a href="#" class="logo-container">
-            <img class="logo" src="images/mekina-global-logo-icon.png" alt="" />
-            <span class="text-white">Mekina Global</span>
-          </a>
-        </li>
-        <li class="custom-mr-1">
-          <a href="#" class="current-link">
-            <i class="fas fa-home"></i>
-            Home
-          </a>
-        </li>
-        <li class="custom-mr-1">
-          <a href="#">
-            <i class="fas fa-table"></i>
-            Collections
-          </a>
-        </li>
+    <!-- header -->
+    <header>
+      <nav>
+        <ul class="main-nav">
+          <li>
+            <a href="#" class="logo-container">
+              <img
+                class="logo"
+                src="images/mekina-global-logo-icon.png"
+                alt=""
+              />
+              <span class="text-white">Mekina Global</span>
+            </a>
+          </li>
+          <li class="custom-mr-1">
+            <a href="#" class="current-link">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li class="custom-mr-1">
+            <a href="#">
+              <i class="fas fa-table"></i>
+              Collections
+            </a>
+          </li>
 
-        <li class="custom-mr-1">
-          <a href="#">
-            <i class="fas fa-shopping-cart"></i>
-            Purchase List
-          </a>
-        </li>
-        <li class="custom-mr-1">
-          <a href="#" class="post-add btn-custom btn-custom-primary text-white">
-            Post an add
-          </a>
-        </li>
-      </ul>
-    </nav>
+          <li class="custom-mr-1">
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+              Purchase List
+            </a>
+          </li>
+          <li class="custom-mr-1">
+            <button
+              type="button"
+              class="post-add btn-rounded btn-custom-primary text-white"
+            >
+              Post an add
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="search-container d-none d-md-flex flex-column align-items-center justify-content-center"
+      >
+        <h1 class="font-weight-bold text-white mb-1 text-large display-4">
+          Mekina Global
+        </h1>
+        <p class="text-white font-weight-100 text-light">
+          Buy and Sell Cars at an Affordable Price!
+        </p>
+        <form
+          action="index.html"
+          class="d-flex align-items-center justify-content-center mt-5"
+        >
+          <div class="form-group mr-1">
+            <select
+              class="form-control input rounded-0 border-0"
+              id="allModels"
+            >
+              <option selected disabled>All Models</option>
+              <option>Kia Telluride</option>
+              <option>Chevrolet Corvette</option>
+              <option>Jeep Gladiator</option>
+              <option>Hyundai Palisade</option>
+              <option>Toyota GR Supra</option>
+            </select>
+          </div>
+          <div class="form-group mr-1">
+            <input
+              type="text"
+              class="form-control input rounded-0 border-0"
+              id="name"
+              placeholder="What do you search for?"
+            />
+          </div>
+          <div class="form-group mr-1">
+            <input
+              type="text"
+              class="form-control input rounded-0 border-0"
+              id="amount"
+              placeholder="What is your budget?"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary input rounded-0 border-0 btn-search"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </header>
+    <!-- end of header  -->
+
+    <!-- hot adds  -->
+    <div class="container">
+      <section class="p-5 mt-4 hot-adds text-dark">
+        <div class="container">
+          <!-- title  -->
+          <div class="row text-white mb-4 ml-1">
+            <h2
+              class="section-title font-weight-600 text-uppercase text-muted ml-5 pl-5"
+            >
+              Hot adds
+            </h2>
+          </div>
+          <!-- end of title  -->
+          <!-- carousel  -->
+          <div class="carousel slide" data-ride="carousel" id="hotAddsCarousel">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-1 align-self-center">
+                  <div
+                    class="btn btn-outline-secondary next"
+                    data-target="#hotAddsCarousel"
+                    data-slide-to="0"
+                  >
+                    <i class="fa fa-lg fa-chevron-left"></i>
+                  </div>
+                </div>
+                <div class="col-md-10 carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card border-0">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img
+                            src="images/MW-HU786_at_hyu_2019.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <h5 class="font-weight-bold">
+                            2020 Hyundai Palisade
+                          </h5>
+                          <p class="mb-1 small">
+                            Hyundai’s HYMTF, +19.02% 3-row midsize SUV is
+                            refined and comfortable, with features like a
+                            one-touch sliding second row.
+                          </p>
+                          <div class="d-flex">
+                            <p class="mr-2">
+                              By: <span class="text-muted">Chevrolet </span>
+                            </p>
+                            <p>Location: Asmara</p>
+                          </div>
+                          <button
+                            class="btn-custom btn-custom-primary mt-1 ml-auto"
+                          >
+                            $12,500
+                          </button>
+                          <button class="btn-custom btn-custom-primary mt-1">
+                          <i class="fas fa-shopping-cart"></i> Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card border-0">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <img
+                            src="images/MW-HY840_tellur_2020.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <h5 class="font-weight-bold">2020 Kia Telluride</h5>
+                          <p class="mb-1 small">
+                            New Kia SUV proved to be all-day comfortable, with a
+                            supremely quiet ride that gobbled up the miles with
+                            graceful ease.
+                          </p>
+                          <div class="d-flex">
+                            <p class="mr-2">
+                              By: <span class="text-muted">Chevrolet </span>
+                            </p>
+                            <p>Location: Asmara</p>
+                          </div>
+                          <button
+                            class="btn-custom btn-custom-primary mt-1 ml-auto"
+                          >
+                            $12,500
+                          </button>
+                          <button class="btn-custom btn-custom-primary mt-1">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card border-0">
+                      <div class="row">
+                        <div class="col-md-4 align-self-center">
+                          <img
+                            src="images/MW-HU338_corvet_2019.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-8">
+                          <h5 class="font-weight-bold">
+                            2020 Chevrolet Corvette
+                          </h5>
+                          <p class="mb-1 small">
+                            With a mid-engine layout for the first time, this
+                            supercar rival is powered by a 490-horsepower V-8
+                            engine that propels the ‘Vette from 0 to 60 in less
+                            than three seconds.
+                          </p>
+                          <div class="d-flex">
+                            <p class="mr-2">
+                              By: <span class="text-muted">Chevrolet </span>
+                            </p>
+                            <p>Location: Asmara</p>
+                          </div>
+                          <button
+                            class="btn-custom btn-custom-primary mt-1 ml-auto"
+                          >
+                            $58,999
+                          </button>
+                          <button class="btn-custom btn-custom-primary mt-1">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-1 align-self-center">
+                  <div
+                    class="btn btn-outline-secondary prev"
+                    data-target="#hotAddsCarousel"
+                    data-slide-to="1"
+                  >
+                    <i class="fa fa-lg fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- carousel  -->
+        </div>
+      </section>
+    </div>
+    <!-- end of hot adds  -->
+
+    
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

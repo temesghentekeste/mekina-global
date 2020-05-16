@@ -68,3 +68,11 @@ $space-amounts: (1, 2, 3, 4, 5);
     padding-right: #{$space}rem;
   }
 }
+
+$weights: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+
+@each $weight in $weights {
+  .font-weight-#{$weight} {
+    font-weight: #{$weight};
+  }
+}
