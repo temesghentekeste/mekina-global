@@ -5,6 +5,18 @@
 body {
   font-family: var(--base-font);
 }
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 
 a {
   color: var(--color-tertiary);
@@ -87,10 +99,27 @@ nav {
 }
 //Hot Offers
 
-.hot-offers {
+.hot-offers,
+.bes-mpg,
+.trending {
   background: linear-gradient(rgba(#888, 0.3), rgba(#eee, 0.8));
   height: 100vh;
   transform: skewY(-7deg);
+  position: relative;
+
+  .fa-chevron-left,
+  .fa-chevron-right {
+    top: 150px;
+    color: #aaa;
+    z-index: 1;
+  }
+  .fa-chevron-left {
+    left: 25px;
+  }
+
+  .fa-chevron-right {
+    right: 25px;
+  }
   .image-link {
     display: inline-block;
     width: 100%;
@@ -109,6 +138,30 @@ nav {
   & a:first-child:hover img {
     transform: scale(1.08);
   }
+}
+//Best MPG
+.best-mpg,
+.trending {
+  background: #888;
+  margin-top: -6rem;
+  transform: skewY(0);
+  & > * {
+    transform: skewY(0);
+  }
+
+  & a:first-child img {
+    transform: scal(0.9);
+    transition: 0.3s ease-in-out;
+  }
+  & a:first-child:hover img {
+    transform: scale(1.08);
+  }
+}
+
+.trending {
+  margin-top: 0;
+  background: linear-gradient(rgba(#888, 0.3), rgba(#eee, 0.8));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 .btn-search {
