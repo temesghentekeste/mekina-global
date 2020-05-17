@@ -1,3 +1,38 @@
+:root {
+  --gutter: 20px;
+}
+
 .section-title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.horizontal-scroll {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns:
+    10px repeat(8, minmax(320px, calc(25% - var(--gutter) * 2)))
+    10px;
+  /* grid-template-rows: minmax(150px, 1fr); */
+
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(0.75 * var(--gutter));
+  margin-bottom: calc(-0.25 * var(--gutter));
+
+  &:before,
+  &:after {
+    content: '';
+  }
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .horizontal-scroll {
+    grid-template-columns:
+      10px repeat(8, minmax(320px, calc(50% - var(--gutter) * 2)))
+      10px;
+  }
 }

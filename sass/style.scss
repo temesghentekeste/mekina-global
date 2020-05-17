@@ -84,9 +84,30 @@ nav {
   h5 {
     color: var(--color-primary);
   }
+}
+//Hot Offers
 
-  .btn-custom {
-    border-radius: none;
+.hot-offers {
+  background: linear-gradient(rgba(#888, 0.3), rgba(#eee, 0.8));
+  height: 100vh;
+  transform: skewY(-7deg);
+  .image-link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  & a:first-child img {
+    transform: scal(0.9);
+    transition: 0.3s ease-in-out;
+  }
+
+  & a:first-child:hover img {
+    transform: scale(1.08);
   }
 }
 
