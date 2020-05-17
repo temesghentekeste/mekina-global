@@ -18,6 +18,7 @@
   scroll-snap-type: x proximity;
   padding-bottom: calc(0.75 * var(--gutter));
   margin-bottom: calc(-0.25 * var(--gutter));
+  border: 1px solid green;
 
   &:before,
   &:after {
@@ -28,6 +29,8 @@
 .no-wrap {
   white-space: nowrap;
 }
+
+
 
 @media (max-width: 768px) {
   .horizontal-scroll {

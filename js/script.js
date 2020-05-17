@@ -10,4 +10,17 @@ $(document).ready(() => {
     console.log('prev');
     return false;
   });
+
+  $(window).scroll(() => {
+    let position = $(this).scrollTop();
+    console.log(position);
+
+    if (position >= 1845) {
+      $('.mission-img').addClass('fromLeft');
+      $('.mission-text').addClass('fromRight');
+    } else {
+      $('.mission-img').removeClass('fromLeft');
+      $('.mission-text').removeClass('fromRight');
+    }
+  });
 });

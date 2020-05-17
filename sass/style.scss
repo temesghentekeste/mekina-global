@@ -1,6 +1,7 @@
 @import 'config';
 @import 'utilities';
 @import 'buttons';
+@import 'animations';
 
 body {
   font-family: var(--base-font);
@@ -98,14 +99,13 @@ nav {
   }
 }
 //Hot Offers
-
 .hot-offers,
-.bes-mpg,
+.best-mpg,
 .trending {
-  background: linear-gradient(rgba(#888, 0.3), rgba(#eee, 0.8));
-  height: 100vh;
-  transform: skewY(-7deg);
+  background: linear-gradient(rgba(#888, 0.3));
+  height: 72vh;
   position: relative;
+  border: 1px solid red;
 
   .fa-chevron-left,
   .fa-chevron-right {
@@ -126,10 +126,6 @@ nav {
     height: 100%;
   }
 
-  & > * {
-    transform: skewY(7deg);
-  }
-
   & a:first-child img {
     transform: scal(0.9);
     transition: 0.3s ease-in-out;
@@ -139,29 +135,46 @@ nav {
     transform: scale(1.08);
   }
 }
-//Best MPG
+
 .best-mpg,
 .trending {
-  background: #888;
-  margin-top: -6rem;
-  transform: skewY(0);
-  & > * {
-    transform: skewY(0);
+  height: 75vh;
+}
+
+
+.mission {
+  background: var(--color-tertiary);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+  .underline {
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
   }
 
-  & a:first-child img {
-    transform: scal(0.9);
-    transition: 0.3s ease-in-out;
-  }
-  & a:first-child:hover img {
-    transform: scale(1.08);
+  i {
+    color: var(--color-primary);
   }
 }
 
-.trending {
-  margin-top: 0;
-  background: linear-gradient(rgba(#888, 0.3), rgba(#eee, 0.8));
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem 0;
+
+  img {
+    height: 35px;
+    width: 35px;
+  }
+
+  h5 {
+    margin-top: 0.4rem;
+  }
+
+  > * {
+    margin-right: 1.2rem;
+  }
 }
 
 .btn-search {
