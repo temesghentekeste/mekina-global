@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mekina Global</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="search-page-header">
+      <nav>
+        <ul class="main-nav">
+          <li class="custom-ml-2">
+            <a href="#" class="logo-container">
+              <img
+                class="logo"
+                src="images/mekina-global-logo-light.png"
+                alt=""
+              />
+             
+            </a>
+          </li>
+          <li >
+            <a href="#" class="current-link">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li >
+            <a href="#">
+              <i class="fas fa-table"></i>
+              Collections
+            </a>
+          </li>
+
+          <li >
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+              Purchase List
+            </a>
+          </li>
+          <li >
+            <button
+              type="button"
+              class="post-add btn-rounded btn-custom-primary text-white"
+            >
+              Advertise
+            </button>
+          </li>
+          <li class="text-white ml-auto custom-mr-3 notification">
+            <i class="fas fa-envelope  fa-lg text-white"><span>3</span></i> 
+            <a href="#" class="custom-ml-1 text-white">John Doe</a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="search-container  d-none d-md-flex flex-column "
+      >
+        <h1 class="font-weight-bold text-white mb-1 text-large display-4">
+          Mekina Global
+        </h1>
+        <p class="text-white font-weight-100 text-light">
+          Search around 124,000 items are waitng to be sold!
+        </p>
+        <form
+          action="index.html"
+          class="d-flex align-items-center justify-content-center mt-2"
+        >
+          <div class="form-group mr-1">
+            <select
+              class="form-control input rounded-0 border-0"
+              id="allModels"
+            >
+              <option selected disabled>All Models</option>
+              <option>Kia Telluride</option>
+              <option>Chevrolet Corvette</option>
+              <option>Jeep Gladiator</option>
+              <option>Hyundai Palisade</option>
+              <option>Toyota GR Supra</option>
+            </select>
+          </div>
+          <div class="form-group mr-1">
+            <input
+              type="text"
+              class="form-control input rounded-0 border-0"
+              id="name"
+              placeholder="What do you search for?"
+            />
+          </div>
+          <div class="form-group mr-1">
+            <input
+              type="text"
+              class="form-control input rounded-0 border-0"
+              id="amount"
+              placeholder="What is your budget?"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary input rounded-0 border-0 btn-search"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </header>
+  <!-- end of header -->
+   
+  <!-- details -->
+  <div class="container p-5">
+    <div class="details-header d-flex flex-column flex-md-row align-items-md-center justify-content-between border-bottom mb-4">
+      <h5 class="font-weight-bold">2016 GX 460 Lexus</h5>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#review">Review</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Features</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div id="carouselProductDetails" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/details/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/details/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/details/3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/details/4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/details/5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/details/6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/details/7.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselProductDetails" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselProductDetails" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <section id="review" class="customer-reviews mt-4 py-4">
+          <h4 class="font-weight-bold">2020 Lexus GX 460 Review</h4>
+          <span class="d-block small">by <strong>the Mekina Global Experts</strong></span>
+          <p class="my-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga pariatur velit voluptatem? Unde nesciunt, pariatur beatae nihil odit eius aut minus veniam ab commodi at sed! Ad voluptatem in nemo tempora dicta cupiditate nesciunt voluptatum, magni ducimus, quo, sint vel.
+          </p>
+        </section>
+      </div>
+      <aside class="col-lg-4 mt-4 mt-md-0">
+       <div class="stars d-inline-block">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+       </div>
+        (<span>21</span>)
+        <p class="font-weight-bold mb-1">2016 GX 460 Lexus</p>
+        <span class="small">MSRP Range: $20,300 - $29,350</span>
+        <div id="accordion" class="mt-2 pros-cons">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Pros
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body p-0 pt-2">
+                <ol>
+                  <li>Adaptive cruise control added to top-trim Kona Ultimate</li>
+                  <li>Small changes to standard and optional equipment</li>
+                  <li>Part of the first Kona generation introduced for 2018</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Cons
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body p-0 pt-2">
+                <ol>
+                  <li>Weak base engine</li>
+                  <li>Gear shifts from the turbocharged engine's transmission are often unrefined</li>
+                  <li>Interior is trimmed with a lot of hard plastic panels</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 What's new
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body p-0 pt-2">
+                <ol>
+                  <li>Adaptive cruise control added to top-trim Kona Ultimate</li>
+                  <li>Small changes to standard and optional equipment</li>
+                  <li>Part of the first Kona generation introduced for 2018</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="input-group mb-3 mt-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Select year</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">2021 - Upcoming</option>
+          <option value="2" selected>2020 - New</option>
+          <option value="3">2019 - New</option>
+        </select>
+      </div>
+      <button class="btn-custom btn-custom-primary btn-block-custom">Build & Price</button>
+      </aside>
+    </div>
+
+    <section class="related">
+      <h4 class="font-weight-bold">Customers also viewed the following related cars</h4>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top"
+                    src="images/popular-cars/usc90tos112d021001.png"
+                    alt="Card image cap"
+                /></a>
+                <div class="card-body py-0 pb-2 d-flex flex-column">
+                  <p
+                    class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+                  >
+                    <span>$17,991</span>
+                    <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                      >Fair price</span
+                    >
+                  </p>
+                  <h5 class="card-title font-weight-bold my-1">
+                    Volkswagen T-Roc
+                  </h5>
+                  <p class="small mb-1">2020, High Speed Car</p>
+                  <p class="small my-0">
+                    <span>Consumer Rating</span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </p>
+                  <div class="d-flex align-items-end">
+                    <a href="#">Details</a>
+                    <button
+                      class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top"
+                    src="images/popular-cars/usc80chs111c021001.png"
+                    alt="Card image cap"
+                /></a>
+                <div class="card-body py-0 pb-2 d-flex flex-column">
+                  <p
+                    class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+                  >
+                    <span>$17,991</span>
+                    <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                      >Fair price</span
+                    >
+                  </p>
+                  <h5 class="card-title font-weight-bold my-1">
+                    Volkswagen T-Roc
+                  </h5>
+                  <p class="small mb-1">2020, High Speed Car</p>
+                  <p class="small my-0">
+                    <span>Consumer Rating</span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </p>
+                  <div class="d-flex align-items-end">
+                    <a href="#">Details</a>
+                    <button
+                      class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top"
+                    src="images/popular-cars/usc80chs292e021001.png"
+                    alt="Card image cap"
+                /></a>
+                <div class="card-body py-0 pb-2 d-flex flex-column">
+                  <p
+                    class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+                  >
+                    <span>$17,991</span>
+                    <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                      >Fair price</span
+                    >
+                  </p>
+                  <h5 class="card-title font-weight-bold my-1">
+                    Volkswagen T-Roc
+                  </h5>
+                  <p class="small mb-1">2020, High Speed Car</p>
+                  <p class="small my-0">
+                    <span>Consumer Rating</span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </p>
+                  <div class="d-flex align-items-end">
+                    <a href="#">Details</a>
+                    <button
+                      class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top"
+                    src="images/popular-cars/usc80jes011a021001.png"
+                    alt="Card image cap"
+                /></a>
+                <div class="card-body py-0 pb-2 d-flex flex-column">
+                  <p
+                    class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+                  >
+                    <span>$17,991</span>
+                    <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                      >Fair price</span
+                    >
+                  </p>
+                  <h5 class="card-title font-weight-bold my-1">
+                    Volkswagen T-Roc
+                  </h5>
+                  <p class="small mb-1">2020, High Speed Car</p>
+                  <p class="small my-0">
+                    <span>Consumer Rating</span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </p>
+                  <div class="d-flex align-items-end">
+                    <a href="#">Details</a>
+                    <button
+                      class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-lg-3 col-6">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top"
+                    src="images/popular-cars/usc80lrs021c021001.png"
+                    alt="Card image cap"
+                /></a>
+                <div class="card-body py-0 pb-2 d-flex flex-column">
+                  <p
+                    class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+                  >
+                    <span>$17,991</span>
+                    <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                      >Fair price</span
+                    >
+                  </p>
+                  <h5 class="card-title font-weight-bold my-1">
+                    Volkswagen T-Roc
+                  </h5>
+                  <p class="small mb-1">2020, High Speed Car</p>
+                  <p class="small my-0">
+                    <span>Consumer Rating</span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </p>
+                  <div class="d-flex align-items-end">
+                    <a href="#">Details</a>
+                    <button
+                      class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top"
+                    src="images/popular-cars/usc90chs091c021001.png"
+                    alt="Card image cap"
+                /></a>
+                <div class="card-body py-0 pb-2 d-flex flex-column">
+                  <p
+                    class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+                  >
+                    <span>$17,991</span>
+                    <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                      >Fair price</span
+                    >
+                  </p>
+                  <h5 class="card-title font-weight-bold my-1">
+                    Volkswagen T-Roc
+                  </h5>
+                  <p class="small mb-1">2020, High Speed Car</p>
+                  <p class="small my-0">
+                    <span>Consumer Rating</span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </p>
+                  <div class="d-flex align-items-end">
+                    <a href="#">Details</a>
+                    <button
+                      class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top"
+                    src="images/popular-cars/usd00hys191c021001.png"
+                    alt="Card image cap"
+                /></a>
+                <div class="card-body py-0 pb-2 d-flex flex-column">
+                  <p
+                    class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+                  >
+                    <span>$17,991</span>
+                    <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                      >Fair price</span
+                    >
+                  </p>
+                  <h5 class="card-title font-weight-bold my-1">
+                    Volkswagen T-Roc
+                  </h5>
+                  <p class="small mb-1">2020, High Speed Car</p>
+                  <p class="small my-0">
+                    <span>Consumer Rating</span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </p>
+                  <div class="d-flex align-items-end">
+                    <a href="#">Details</a>
+                    <button
+                      class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6">
+              <div class="card">
+                <a href="#"
+                  ><img
+                    class="card-img-top"
+                    src="images/popular-cars/usd00tos142e021001.png"
+                    alt="Card image cap"
+                /></a>
+                <div class="card-body py-0 pb-2 d-flex flex-column">
+                  <p
+                    class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+                  >
+                    <span>$17,991</span>
+                    <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                      >Fair price</span
+                    >
+                  </p>
+                  <h5 class="card-title font-weight-bold my-1">
+                    Volkswagen T-Roc
+                  </h5>
+                  <p class="small mb-1">2020, High Speed Car</p>
+                  <p class="small my-0">
+                    <span>Consumer Rating</span>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i>
+                  </p>
+                  <div class="d-flex align-items-end">
+                    <a href="#">Details</a>
+                    <button
+                      class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                    >
+                      <i class="fas fa-shopping-cart"></i> Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+  
+   
+  </div>
+  <!-- end of details -->
+    <section class="follow px-4">
+    
+      <h5 class="py-4 pr-0 pl-2 ml-4 display-5">Follow Mekina Global</h5>
+      <a href="#"> <img src="images/social/social-facebookpng.png" alt=""></i></a>
+      <a href="#"> <img src="images/social/social-linkedin.png" alt=""></i></a>
+      <a href="#"> <img src="images/social/social-twitter.png" alt=""></i></a>
+      <a href="#"> <img src="images/social/social-instagram.png" alt=""></i></a>
+  </section>
+  <footer>
+    <div class="container-fluid footer-links py-4">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <div class="footer-logo-container">
+            <img src="images/mekina-global-logo-light.png" alt="">
+            <p class="pt-2 text-sm text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, eos praesentium. Illo saepe, suscipit minima iure itaque velit in magnam!</p>
+        </div>
+        <div class="
+        py-4
+        mt-4
+        ">
+          <ul class=" px-0 mt-4 pl-3">
+            <li class="custom-mr-1 mt-md-3 ml-0">
+              <a href="#">
+                <i class="fas fa-home"></i>
+                Home
+              </a>
+            </li>
+            <li class="custom-mr-1">
+              <a href="#">
+                <i class="fas fa-table"></i>
+                Collections
+              </a>
+            </li>
+  
+            <li class="custom-mr-1">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+               About Us
+              </a>
+            </li>
+            <li class="custom-mr-1">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+              Contact Us
+              </a>
+            </li>
+            <li class="custom-mr-1">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+                All Cars
+              </a>
+            </li>
+            <li class="custom-mr-1">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+                Advertise
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-white copyright text-center p-4">
+      <div class="row justify-content-center">
+        Copyright &copy; 2020 Mekina Global. All Right Reserved 
+      </div>
+    </div>
+  </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

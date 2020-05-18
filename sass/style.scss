@@ -218,10 +218,48 @@ main {
   }
 }
 
+//details page
+.details-header {
+  ul {
+    @include display-flex($direction:row);
+
+    li{
+      margin-right: 1rem;
+      a{
+        font-size: 1rem;
+
+        &:hover {
+          text-decoration: none;
+          color:var(--color-primary);
+        }
+      }
+    }
+  }
+
+}
+
+.pros-cons button {
+  color: var(--color-tertiary);
+  &:hover{
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+}
+
+
+
 footer {
   .footer-links {
     background: linear-gradient(rgba(#888, 0.5), rgba(#383838, 1));
     height: 400px;
+
+    .footer-logo-container {
+      width: 50%;
+    }
+
+    ul {
+      border-left: 1px solid var(--color-tertiary);
+    }
 
     li {
       margin-bottom: 1rem;
@@ -298,12 +336,41 @@ footer {
     }
   }
 
-  .footer-links {
-    img {
-      margin: auto;
-    }
+  .details-header {
     ul {
-      margin: auto;
+      padding-left: 0;
+    }
+  }
+
+  footer {
+    .footer-links {
+      img {
+        margin: auto;
+      }
+
+      ul {
+        margin: auto;
+        display: flex;
+        border-left: none;
+        flex-wrap: wrap;
+
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+
+  
+
+  .footer-logo-container {
+    width: 80% !important;
+    text-align: center;
+    @include display-flex($direction: column);
+    margin-top: 2rem;
+
+    p {
+      margin-top: 0.8rem;
     }
   }
 }
@@ -312,6 +379,7 @@ footer {
   .main-nav {
     i {
       display: none;
+      border-left: 0;
     }
 
     .custom-mr-1 {

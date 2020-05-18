@@ -6,7 +6,7 @@
   --gutter: 20px;
 }
 
-@mixin display-flex($dirction) {
+@mixin display-flex($direction:row) {
   display: flex;
   flex-direction: $direction;
 }

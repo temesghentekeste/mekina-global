@@ -30,3 +30,8 @@
 .btn-custom-primary {
   @include set-background(#d35266, #fff);
 }
+
+.btn-block-custom {
+  display: block;
+  width: 100%;
+}
