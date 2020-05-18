@@ -3,6 +3,7 @@
   --color-primary: #d35266;
   --color-secondary: #888;
   --color-tertiary: #383838;
+  --gutter: 20px;
 }
 
 @mixin display-flex($dirction) {

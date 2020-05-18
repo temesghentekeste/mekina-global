@@ -35,9 +35,9 @@ img {
 
 // Header
 header {
-  height: 100vh;
+  height: 50vh;
   background: linear-gradient(rgba(#d35266, 0.8), rgba(#d35266, 0.9));
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
   position: relative;
 
   .search-container {
@@ -105,7 +105,6 @@ nav {
   background: linear-gradient(rgba(#888, 0.3));
   height: 72vh;
   position: relative;
-  border: 1px solid red;
 
   .fa-chevron-left,
   .fa-chevron-right {
@@ -138,13 +137,11 @@ nav {
 
 .best-mpg,
 .trending {
-  height: 75vh;
+  height: 80vh;
 }
-
 
 .mission {
   background: var(--color-tertiary);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
   .underline {
     width: 150px;
@@ -177,6 +174,37 @@ nav {
   }
 }
 
+footer {
+  .footer-links {
+    background: linear-gradient(rgba(#888, 0.5), rgba(#383838, 1));
+    height: 400px;
+  
+    li{
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #fff;
+  
+    }
+  
+   
+    i{
+      margin-right: 0.4rem;
+      color: var(--color-primary);
+      font-weight: bold;
+    }
+  
+    img{
+      width: 300px;
+    }
+  }
+
+  .copyright {
+    height: 13vh;
+    background: linear-gradient(rgba(#000, 0.9), rgba(#383838, 1));
+  }
+}
+
 .btn-search {
   margin-top: -1rem;
   background: var(--color-tertiary);
@@ -199,6 +227,15 @@ nav {
 
     .post-add {
       display: none;
+    }
+  }
+
+  .footer-links {
+    img{
+      margin: auto;
+    }
+    ul{
+      margin: auto;
     }
   }
 }
