@@ -466,25 +466,12 @@ ul {
 }
 
 nav {
-  background:
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.9)),
-      to(#383838)
-    );
   background: linear-gradient(rgba(0, 0, 0, 0.9), #383838);
   height: 60px;
   padding: 1.25rem 0;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .menu-btn {
@@ -505,14 +492,6 @@ nav {
 
 header {
   height: 50vh;
-  background:
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(211, 82, 102, 0.8)),
-      to(rgba(211, 82, 102, 0.9))
-    );
   background: linear-gradient(rgba(211, 82, 102, 0.8), rgba(211, 82, 102, 0.9));
   position: relative;
 }
@@ -536,13 +515,6 @@ header {
 .hot-offers,
 .best-mpg,
 .trending {
-  background:
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(136, 136, 136, 0.1))
-    );
   background: linear-gradient(rgba(136, 136, 136, 0.1));
   height: 72vh;
   position: relative;
@@ -587,7 +559,7 @@ main {
 
 header .search-container {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
@@ -702,7 +674,7 @@ nav .logo-container {
 
 .search-page-header .search-container {
   top: 30%;
-  left: 39%;
+  left: 46%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }
@@ -745,15 +717,9 @@ nav .logo-container {
 
 .contact {
   margin-top: 5rem;
-  background:
-    linear-gradient(
-      105deg,
-      #383838 0%,
-      rgba(56, 56, 56, 0.95) 50%,
-      transparent 50%
-    ),
-    url('../images/contact/MW-HY837_at_gla_20200.jpg') no-repeat center
-    center/cover;
+
+  /* background: linear-gradient(105deg #383838 0%rgba(56, 56, 56, 0.95) 50%, transparent 50%), url('../images/contact/MW-HY837_at_gla_20200.jpg') no-repeat center center/cover; */
+  background: linear-gradient(rgba(56, 56, 56, 0.95), rgba(56, 56, 56, 0.9)), url('../images/contact/MW-HY837_at_gla_20200.jpg') no-repeat center center/cover;
 }
 
 .contact input {
@@ -785,14 +751,6 @@ nav .logo-container {
 
 footer .copyright {
   height: 13vh;
-  background:
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.9)),
-      to(#383838)
-    );
   background: linear-gradient(rgba(0, 0, 0, 0.9), #383838);
 }
 
@@ -801,14 +759,6 @@ footer .copyright {
 }
 
 footer .footer-links {
-  background:
-    -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(136, 136, 136, 0.5)),
-      to(#383838)
-    );
   background: linear-gradient(rgba(136, 136, 136, 0.5), #383838);
   height: 400px;
 }
@@ -1017,14 +967,6 @@ footer .footer-links ul {
 
 @media (max-width: 992px) {
   .contact {
-    background:
-      -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from(#383838),
-        to(rgba(56, 56, 56, 0.95))
-      );
     background: linear-gradient(#383838, rgba(56, 56, 56, 0.95));
   }
 }
