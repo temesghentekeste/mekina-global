@@ -1,6 +1,6 @@
 # Responsive Web Design
 
-This project is a capstone project as a completion of the HTML & CSS of microverse Curriculum:
+This project is a capstone project as a completion of the HTML & CSS of microverse Curriculum. It is a project to showcase HTM & CSS Skills
 
 ## Screenshot
 
