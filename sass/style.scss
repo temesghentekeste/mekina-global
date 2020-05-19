@@ -221,32 +221,59 @@ main {
 //details page
 .details-header {
   ul {
-    @include display-flex($direction:row);
+    @include display-flex($direction: row);
 
-    li{
+    li {
       margin-right: 1rem;
-      a{
+      a {
         font-size: 1rem;
 
         &:hover {
           text-decoration: none;
-          color:var(--color-primary);
+          color: var(--color-primary);
         }
       }
     }
   }
-
 }
 
 .pros-cons button {
   color: var(--color-tertiary);
-  &:hover{
+  &:hover {
     color: var(--color-primary);
     text-decoration: none;
   }
 }
 
-
+//about
+.contact {
+  background: linear-gradient(
+      105deg,
+      rgba(#383838, 1) 0%,
+      rgba(#383838, 0.95) 50%,
+      transparent 50%
+    ),
+    url('../images/contact/MW-HY837_at_gla_20200.jpg') no-repeat center center /
+      cover;
+  input {
+    color: #fff;
+    background: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #888;
+    border-radius: 0;
+    transition: all 0.7s;
+    &:focus {
+      background: transparent;
+      border-color: transparent;
+      box-shadow: none;
+      color: #fff;
+      border-bottom: 2px solid var(--color-primary);
+    }
+  }
+  ::placeholder {
+    color: #ccc;
+  }
+}
 
 footer {
   .footer-links {
@@ -321,6 +348,12 @@ footer {
   }
 }
 
+@media(max-width: 992px){
+  .contact{
+    background: linear-gradient(rgba(#383838, 1), rgba(#383838, 0.95));
+  }
+}
+
 @media (max-width: 768px) {
   header,
   .search-page-header {
@@ -360,8 +393,6 @@ footer {
       }
     }
   }
-
-  
 
   .footer-logo-container {
     width: 80% !important;
