@@ -1,6 +1,6 @@
 # Responsive Web Design
 
-This project is a capstone project as a completion of the HTML & CSS of microverse Curriculum. It is a project to showcase HTM & CSS Skills
+This project is a capstone project as a completion of the HTML & CSS of microverse Curriculum. It is a project to showcase HTML & CSS Skills.
 
 ## Screenshot
 
@@ -17,9 +17,9 @@ This project is a capstone project as a completion of the HTML & CSS of microver
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/temesghentekeste/mekina-global/33944cce9fe53d12a8175eb4646dfed57edd33fb/index.html">Live version</a>
+<a href="https://rawcdn.githack.com/temesghentekeste/mekina-global/4ed4518bff577a3130727114df1c019e86358297/index.html">Live version</a>
 
-## Authors
+## Author
 
 👤 **Temesghen Tekeste**
 
@@ -42,6 +42,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- <a href="https://www.microverse.org/" target="_blank">microverse.org</a>
 - <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a>
 - <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
 - <a href="https://www.stackoverflow.com/" target="_blank">Stackoverflow</a>
