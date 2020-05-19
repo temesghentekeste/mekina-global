@@ -18,20 +18,22 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- menu toggler  -->
+    <div class="menu-btn">
+      <div class="fas fa-bars fa-2x"></div>
+    </div>
+    <!-- end of menu toggler -->
     <!-- header -->
     <header>
       <nav>
-        <ul class="main-nav">
-          <li>
-            <a href="index.html" class="logo-container">
-              <img
-                class="logo"
-                src="images/mekina-global-logo-icon.png"
-                alt=""
-              />
-              <span class="text-white">Mekina Global</span>
-            </a>
-          </li>
+          <a href="index.html" class="logo-container">
+            <img
+              class="logo"
+              src="images/mekina-global-logo-light.png"
+              alt=""
+            />
+          </a>
+        <ul class="main-menu">
           <li>
             <a href="#" class="current-link">
               <i class="fas fa-home"></i>
@@ -122,15 +124,15 @@
 
     <!-- hot adds  -->
     <div class="container">
-      <section class="p-5 mt-4 hot-adds text-dark">
+      <section class="p-5 mt-4 d-none d-md-block hot-adds text-dark">
         <div class="container">
           <!-- title  -->
           <div class="row text-white mb-4 ml-1">
-            <h2
+            <h4
               class="section-title font-weight-600 text-uppercase text-muted ml-5 pl-5"
             >
-              Hot adds
-            </h2>
+              Hot ads
+            </h4>
           </div>
           <!-- end of title  -->
           <!-- carousel  -->
@@ -278,7 +280,7 @@
 
     <!-- hot offers  -->
     <section class="hot-offers mt-4  px-5 pb-0">
-      <h2 class="text-dark mt-4 p-4 ml-2">Hot Offers</h2>
+      <h4 class="text-dark font-weight-bold mt-4 p-4 ml-2">Hot Offers</h4>
       <div class="container-fluid">
         <i
           class="fa fa-lg fa-chevron-left fa-4x position-absolute d-lg-none"
@@ -609,7 +611,7 @@
     <!-- end of hot offers  -->
     <!-- Best MPG offers  -->
     <section class="best-mpg px-5  pt-0">
-      <h2 class="text-dark mt-0  p-4 ml-2">Best MPG</h2>
+      <h4 class="text-dark font-weight-bold mt-4 p-4 ml-2">Best MPG</h4>
       <div class="container-fluid">
         <i
           class="fa fa-lg fa-chevron-left fa-4x position-absolute d-lg-none"
@@ -937,7 +939,7 @@
     <!-- end of Best MPG offers  -->
     <!-- Trending around you  -->
     <section class="trending px-5 pb-5 mt-0 ">
-      <h2 class="text-dark mt-0 mb-4  px-4 ml-2">Trending Around You</h2>
+      <h4 class="text-dark font-weight-bold mt-4 p-4 ml-2">Trending Around You</h4>
       <div class="container-fluid">
         <i
           class="fa fa-lg fa-chevron-left fa-4x position-absolute d-lg-none"
@@ -1264,48 +1266,6 @@
     </section>
     <!-- end of Trending around you  -->
 
-    <section class="mission p-5">
-      <div class="container-fluid">
-          <div class="row text-white text-center">
-            <div class="col m-4">
-              <h2 class="display-4 mb-4">
-                Our Mission
-              </h2>
-              <div class="underline mb-4"></div>
-              <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, qui consectetur! Distinctio sed fugiat voluptate alias eum enim odio iste.</p>
-            </div>
-        </div>
-        <div class="row my-5">
-          <div class="col-lg-4 text-center">
-            <i class="fas fa-cogs fa-5x  mb-4"></i>
-            <h2 class="text-white mb-3">Creativity</h2>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate dolorem corrupti, distinctio totam rem necessitatibus quis facere nihil quae? Amet natus consequuntur deleniti esse quia.</p>
-          </div>
-          <div class="col-lg-4 text-center">
-            <i class="far fa-thumbs-up fa-5x  mb-4"></i>
-            <h2 class="text-white mb-3">Quality</h2>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate dolorem corrupti, distinctio totam rem necessitatibus quis facere nihil quae? Amet natus consequuntur deleniti esse quia.</p>
-          </div>
-          <div class="col-lg-4 text-center">
-            <i class="far fa-handshake fa-5x  mb-4"></i>
-            <h2 class="text-white mb-3">Satisfaction</h2>
-            <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate dolorem corrupti, distinctio totam rem necessitatibus quis facere nihil quae? Amet natus consequuntur deleniti esse quia.</p>
-          </div> 
-        </div>
-      </div>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 text-center">
-            <img src="images/about-mekina.png" width="350" class="img-fluid mission-img" alt="">
-          </div>
-          <div class="col-lg-7 text-white text-lg-right text-center mission-text">
-            <h1>We know what we do</h1>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae iure tenetur sequi. Commodi ab corporis debitis culpa voluptates nemo laborum, at itaque quos molestiae? Explicabo illo culpa ad facilis aut?</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
       <section class="follow px-4">
     
         <h5 class="py-4 pr-0 pl-2 ml-4 display-5">Follow Mekina Global</h5>
@@ -1326,7 +1286,7 @@
           py-4
           mt-4
           ">
-            <ul class=" px-0 mt-4 pl-3">
+            <ul class=" px-0 mt-4 md-pl-3">
               <li class="custom-mr-1 mt-md-3 ml-0">
                 <a href="#">
                   <i class="fas fa-home"></i>

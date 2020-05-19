@@ -18,20 +18,23 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- menu toggler  -->
+    <div class="menu-btn">
+      <div class="fas fa-bars fa-2x"></div>
+    </div>
+    <!-- end of menu toggler -->
     <!-- header -->
     <header class="search-page-header">
       <nav>
-        <ul class="main-nav">
-          <li class="custom-ml-2">
-            <a href="index.html" class="logo-container">
-              <img
-                class="logo"
-                src="images/mekina-global-logo-light.png"
-                alt=""
-              />
-             
-            </a>
-          </li>
+        <a href="index.html" class="logo-container">
+          <img
+            class="logo"
+            src="images/mekina-global-logo-light.png"
+            alt=""
+          />
+        </a>
+        <ul class="main-menu">
+          
           <li >
             <a href="#" class="current-link">
               <i class="fas fa-home"></i>
@@ -123,8 +126,8 @@
         <aside
           class="col-md-3 d-none d-md-block  border-right"
         >
-          <div class="d-flex justify-content-center p-3 mt-4">
-            <label class="checkbox-container mr-4"
+          <div class="d-flex justify-content-around p-md-3 mt-4">
+            <label class="checkbox-container"
               >New
               <input type="checkbox" />
               <span class="checkmark"></span>
@@ -140,37 +143,37 @@
           </p>
           <div class="d-flex flex-column ml-5 pl-4 mt-3">
             <label class="checkbox-container mr-4"
-              >New
+              >Fuel
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
             <label class="checkbox-container"
-              >Used
+              >Electric
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
             <label class="checkbox-container"
-              >Used
+              >Hybrid
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
           </div>
           <p class="lead ml-5 pl-4 mr-4 font-weight-bold mb-0 border-bottom">
-            Size
+            Gear
           </p>
           <div class="d-flex flex-column ml-5 pl-4 mt-3">
             <label class="checkbox-container mr-4"
-              >New
+              >Automatic
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
             <label class="checkbox-container"
-              >Used
+              >Manual
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
             <label class="checkbox-container"
-              >Used
+              >CVT
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
@@ -180,17 +183,17 @@
           </p>
           <div class="d-flex flex-column ml-5 pl-4 mt-3">
             <label class="checkbox-container mr-4"
-              >New
+              >Less than $20K
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
             <label class="checkbox-container"
-              >Used
+              >$20K - $50K
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
             <label class="checkbox-container"
-              >Used
+              >Above $50K
               <input type="checkbox" />
               <span class="checkmark"></span>
             </label>
@@ -579,7 +582,7 @@
             </div>
           </div>
           <!-- pagination  -->
-          <nav class="search-nav">
+          <nav class="search-nav justify-content-center">
             <ul class="pagination justify-content-center">
                 <li class="page-item">
                   <a href="#" class="page-link py-2 px-3">
@@ -632,7 +635,7 @@
         py-4
         mt-4
         ">
-          <ul class=" px-0 mt-4 pl-3">
+          <ul class=" px-0 mt-4 md-pl-3">
             <li class="custom-mr-1 mt-md-3 ml-0">
               <a href="#">
                 <i class="fas fa-home"></i>
