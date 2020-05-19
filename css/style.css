@@ -416,7 +416,6 @@
   display: -ms-grid;
   display: grid;
   grid-gap: calc(var(--gutter) / 2);
-  -ms-grid-columns: 10px (minmax(320px, calc(25% - var(--gutter) * 2))) [8] 10px;
   grid-template-columns:
     10px repeat(8, minmax(320px, calc(25% - var(--gutter) * 2)))
     10px;
@@ -954,9 +953,6 @@ footer .footer-links ul {
 
 @media (max-width: 768px) {
   .horizontal-scroll {
-    -ms-grid-columns:
-      10px (minmax(320px, calc(50% - var(--gutter) * 2))) [8]
-      10px;
     grid-template-columns:
       10px repeat(8, minmax(320px, calc(50% - var(--gutter) * 2)))
       10px;
