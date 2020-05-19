@@ -4,8 +4,7 @@ This project is a capstone project as a completion of the HTML & CSS of microver
 
 ## Screenshot
 
-![screenshot](https://github.com/temesghentekeste/mekina-global/blob/mekina-global-dev/img/app-screenshot.png)
-
+![screenshot](https://github.com/temesghentekeste/mekina-global/blob/mekina-global-dev/images/app-screenshot.png)
 
 ## Built With
 
@@ -18,7 +17,7 @@ This project is a capstone project as a completion of the HTML & CSS of microver
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/temesghentekeste/mekina-global/b2953b4223e0777641aebcda01c1402cb3f983b5/index.html">Live version</a>
+<a href="https://rawcdn.githack.com/temesghentekeste/mekina-global/33944cce9fe53d12a8175eb4646dfed57edd33fb/index.html">Live version</a>
 
 ## Authors
 
