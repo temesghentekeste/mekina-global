@@ -477,7 +477,7 @@ nav {
 .menu-btn {
   position: absolute;
   top: 20px;
-  right: 30px;
+  right: 10px;
   z-index: 2;
   cursor: pointer;
   display: none;
@@ -540,6 +540,12 @@ header {
 
 .search-page-header {
   height: 35vh;
+}
+
+.notification {
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .search-results-container {
@@ -629,6 +635,11 @@ nav .logo-container {
 
 .main-menu i {
   margin-right: 0.3rem;
+  white-space: nowrap;
+}
+
+.notification a {
+  text-decoration: none;
 }
 
 .hot-adds h5 {
@@ -914,6 +925,10 @@ footer .footer-links ul {
     grid-template-columns:
       10px repeat(8, minmax(320px, calc(50% - var(--gutter) * 2)))
       10px;
+  }
+
+  .notification {
+    margin-right: 45px;
   }
 }
 
