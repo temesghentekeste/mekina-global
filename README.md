@@ -17,7 +17,7 @@ This project is a capstone project as a completion of the HTML & CSS of microver
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/temesghentekeste/mekina-global/7129d910663fb4035a9310ea717d71b9b450140c/index.html">Live version</a>
+<a href="https://rawcdn.githack.com/temesghentekeste/mekina-global/9951563da65fd3fd484e095c0d5bf680d030a48c/index.html">Live version</a>
 
 ## Author
 
