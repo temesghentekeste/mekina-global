@@ -1,4 +1,4 @@
-# Responsive Web Design
+# HTML/CSS capstone project
 
 This project is a capstone project developed as a completion of HTML & CSS section of Microverse main curriculum. It is a solo project intended to showcase HTML & CSS Skills. It is a real-world-like project built with some business specifications. It consist of four pages: landing page, search results page, item details page and the about page. The custom css of the project is generated using Sass which makes it reusable, readable and scalable.
 
