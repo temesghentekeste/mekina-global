@@ -539,7 +539,7 @@ header {
 }
 
 .search-page-header {
-  height: 35vh;
+  height: 40vh;
 }
 
 .notification {
@@ -685,9 +685,11 @@ nav .logo-container {
 
 .search-page-header .search-container {
   top: 30%;
-  left: 46%;
+  left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+
+  /* padding: 2rem; */
 }
 
 .search-page-header .fa-envelope {
@@ -929,6 +931,28 @@ footer .footer-links ul {
 
   .notification {
     margin-right: 45px;
+  }
+
+  .search-container {
+    width: 100%;
+    height: 55vh;
+    background:
+      linear-gradient(
+        rgba(211, 82, 102, 0.8),
+        rgba(211, 82, 102, 0.9)
+      );
+    margin-top: 40px;
+    margin-bottom: 3rem;
+    padding: 2rem;
+  }
+
+  .hot-adds {
+    margin-top: 25rem;
+  }
+
+  .search-results-container,
+  .search-details-container {
+    margin-top: 27rem;
   }
 }
 
