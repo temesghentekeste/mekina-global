@@ -1,10 +1,14 @@
 # Responsive Web Design
 
-This project is a capstone project as a completion of the HTML & CSS of microverse Curriculum. It is a project to showcase HTML & CSS Skills.
+This project is a capstone project developed as a completion of HTML & CSS section of Microverse main curriculum. It is a solo project intended to showcase HTML & CSS Skills. It is a real-world-like project built with some business specifications. It consist of four pages: landing page, search results page, item details page and the about page. The custom css of the project is generated using Sass which makes it reusable, readable and scalable.
 
-## Screenshot
+## Desktop
 
-![screenshot](./images/app-screenshot.png)
+![screenshot](./images/app_screenshot_desktop.gif)
+
+## Mobile
+
+![screenshot](./images/app_screenshot_mobile.gif)
 
 ## Built With
 
@@ -43,6 +47,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - <a href="https://www.microverse.org/" target="_blank">microverse.org</a>
+- <a href="https://www.behance.net/gallery/24796463/ZATTIX" target="_blank">ZATTIX Mohammed Awad</a>
 - <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a>
 - <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>
 - <a href="https://www.stackoverflow.com/" target="_blank">Stackoverflow</a>

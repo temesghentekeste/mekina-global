@@ -18,14 +18,14 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- menu toggler  -->
-    <div class="menu-btn">
-      <div class="fas fa-bars fa-2x"></div>
-    </div>
     <!-- end of menu toggler -->
     <!-- header -->
     <header>
       <nav>
+        <!-- menu toggler  -->
+        <div class="menu-btn">
+          <div class="fas fa-bars fa-2x"></div>
+        </div>
         <a href="index.html" class="logo-container">
           <img class="logo" src="images/mekina-global-logo-light.png" alt="" />
         </a>
@@ -67,7 +67,9 @@
       <div
         class="search-container d-md-flex flex-column align-items-center justify-content-center"
       >
-        <h1 class="text-center font-weight-bold text-white mb-1 text-large display-4">
+        <h1
+          class="text-center font-weight-bold text-white mb-1 text-large display-4"
+        >
           Mekina Global
         </h1>
         <p class="text-center text-white font-weight-100 text-light">
@@ -75,9 +77,9 @@
         </p>
         <form
           action="search.html"
-          class="d-flex flex-column flex-md-row md-align-items-center md-justify-content-center mt-5"
+          class="d-flex flex-column flex-md-row md-align-items-center md-justify-content-center mt-5 search-form"
         >
-          <div class="form-group mr-1 mb-4  mb-md-0">
+          <div class="form-group mr-1 mb-4 mb-md-0">
             <select
               class="form-control input rounded-0 border-0"
               id="allModels"
@@ -109,7 +111,7 @@
 
           <button
             type="submit"
-            class="btn btn-primary input rounded-0 border-0 btn-search align-self-stretch align-self-md-center mt-2  mt-md-0"
+            class="btn btn-primary input rounded-0 border-0 btn-search align-self-stretch align-self-md-center mt-2 mt-md-0"
           >
             Submit
           </button>
@@ -120,42 +122,34 @@
 
     <!-- hot adds  -->
     <div class="container">
-      <section class="p-5 mt-md-5 d-md-block hot-adds text-dark">
-        <div class="container">
+      <section class="pt-5 mt-md-5 d-md-block hot-adds text-dark position-relative">
+        <div class="container-fluid px-0 mx-0">
           <!-- title  -->
-          <div class="row text-white mb-4 ml-1">
+          <div class="row mb-4 px-0">
             <h4
-              class="section-title font-weight-600 text-uppercase text-muted ml-5 pl-5"
+              class="section-title font-weight-600 text-uppercase text-muted ml-4"
             >
               Hot ads
             </h4>
           </div>
           <!-- end of title  -->
           <!-- carousel  -->
-          <div class="carousel slide" data-ride="carousel" id="hotAddsCarousel">
-            <div class="container">
+          
+          <div class="carousel slide  px-0" data-ride="carousel" id="hotAddsCarousel">
+            <div class="container-fluid">
               <div class="row">
-                <div class="col-md-1 align-self-center">
-                  <div
-                    class="btn btn-outline-secondary next border-0"
-                    data-target="#hotAddsCarousel"
-                    data-slide-to="0"
-                  >
-                    <i class="fa fa-lg fa-chevron-left"></i>
-                  </div>
-                </div>
-                <div class="col-md-10 carousel-inner">
-                  <div class="carousel-item active">
+                <div class="col-12 carousel-inner">
+                  <div class="carousel-item active mb-2">
                     <div class="card border-0">
                       <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-7 mb-4 mb-md-0">
                           <img
                             src="images/MW-HU786_at_hyu_2019.jpg"
-                            class="img-fluid"
+                            class="img-fluid carousel-img"
                             alt=""
                           />
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-5 align-self-center">
                           <h5 class="font-weight-bold">
                             2020 Hyundai Palisade
                           </h5>
@@ -182,17 +176,17 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item mb-2">
                     <div class="card border-0">
                       <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-7 mb-4 mb-md-0">
                           <img
                             src="images/MW-HY840_tellur_2020.jpg"
-                            class="img-fluid"
+                            class="img-fluid carousel-img"
                             alt=""
                           />
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-5 align-self-center">
                           <h5 class="font-weight-bold">2020 Kia Telluride</h5>
                           <p class="mb-1 small">
                             New Kia SUV proved to be all-day comfortable, with a
@@ -217,22 +211,22 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+                  <div class="carousel-item mb-2">
                     <div class="card border-0">
                       <div class="row">
-                        <div class="col-md-4 align-self-center">
+                        <div class="col-md-7 mb-4 mb-md-0">
                           <img
                             src="images/MW-HU338_corvet_2019.jpg"
-                            class="img-fluid"
+                            class="img-fluid carousel-img"
                             alt=""
                           />
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-5 align-self-center">
                           <h5 class="font-weight-bold">
                             2020 Chevrolet Corvette
                           </h5>
                           <p class="mb-1 small">
-                            With a mid-engine layout for the first time, this
+                            This
                             supercar rival is powered by a 490-horsepower V-8
                             engine that propels the ‘Vette from 0 to 60 in less
                             than three seconds.
@@ -256,20 +250,34 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-1 align-self-center">
-                  <div
-                    class="btn btn-outline-secondary prev border-0"
-                    data-target="#hotAddsCarousel"
-                    data-slide-to="1"
-                  >
-                    <i class="fa fa-lg fa-chevron-right"></i>
-                  </div>
-                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls d-flex justify-content-center">
+            <div class=" prev-col ">
+              <div
+                class="btn btn-outline-secondary prev border-0"
+                data-target="#hotAddsCarousel"
+                data-slide-to="0"
+              >
+                <i class="fa fa-lg fa-chevron-left"></i>
+              </div>
+            </div>
+            <div class="next-col ">
+              <div
+                class="btn btn-outline-secondary next border-0"
+                data-target="#hotAddsCarousel"
+                data-slide-to="0"
+              >
+                <i class="fa fa-lg fa-chevron-right"></i>
               </div>
             </div>
           </div>
           <!-- carousel  -->
         </div>
+      
+        
       </section>
     </div>
     <!-- end of hot adds  -->

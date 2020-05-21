@@ -4,6 +4,7 @@
   --color-secondary: #888;
   --color-tertiary: #383838;
   --gutter: 20px;
+  --scroll-spacing: 100px;
 }
 
 .custom-m-1 {
@@ -437,8 +438,13 @@
   display: none;
 }
 
+html {
+  scroll-padding-top: var(--scroll-spacing);
+}
+
 body {
   font-family: var(--base-font);
+  margin: var(--scroll-spacing) auto;
 }
 
 body::-webkit-scrollbar {
@@ -474,6 +480,13 @@ nav {
   justify-content: center;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .menu-btn {
   position: absolute;
   top: 20px;
@@ -494,6 +507,7 @@ header {
   height: 50vh;
   background: linear-gradient(rgba(211, 82, 102, 0.8), rgba(211, 82, 102, 0.9));
   position: relative;
+  margin-top: -6.5rem;
 }
 
 .main-menu {
@@ -510,6 +524,12 @@ header {
   flex-wrap: nowrap;
   font-size: 1rem;
   padding-top: 1.2rem;
+}
+
+#searchCarouselControls {
+  position: absolute;
+
+  /* top: 200px; */
 }
 
 .hot-offers,
@@ -561,10 +581,17 @@ main {
   color: #383838;
 }
 
+.about-banner {
+  margin-top: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
 /* Two level selectors******************************** */
 
 header .search-container {
   position: absolute;
+  width: 100%;
   top: 30%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -933,26 +960,27 @@ footer .footer-links ul {
     margin-right: 45px;
   }
 
-  .search-container {
+  header {
+    height: 65vh;
+  }
+
+  .follow {
+    flex-direction: column;
+  }
+
+  .follow > * {
+    margin-bottom: 1rem;
+  }
+
+  header .search-container {
+    top: 15%;
     width: 100%;
-    height: 55vh;
-    background:
-      linear-gradient(
-        rgba(211, 82, 102, 0.8),
-        rgba(211, 82, 102, 0.9)
-      );
-    margin-top: 40px;
     margin-bottom: 3rem;
     padding: 2rem;
   }
 
-  .hot-adds {
-    margin-top: 25rem;
-  }
-
-  .search-results-container,
-  .search-details-container {
-    margin-top: 27rem;
+  .about-header {
+    height: 40vh;
   }
 }
 
@@ -1026,6 +1054,10 @@ footer .footer-links ul {
     justify-content: space-between;
   }
 
+  .main-menu {
+    white-space: nowrap;
+  }
+
   .main-menu i {
     display: none;
   }
@@ -1048,13 +1080,21 @@ footer .footer-links ul {
     margin-right: 0;
     margin-left: 0;
   }
+
+  .notification {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 0.5rem;
+  }
+
+  .notification a {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 768px) {
-  header,
   .search-page-header {
-    height: inherit;
-    background: none;
+    height: 65vh;
   }
 
   .menu-btn {
@@ -1147,5 +1187,9 @@ footer .footer-links ul {
 
   .footer-logo-container p {
     margin-top: 0.8rem;
+  }
+
+  .search-page-header .search-container {
+    top: 15%;
   }
 }
