@@ -384,6 +384,7 @@
   animation-name: fromRight;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
+  animation-iteration-count: 3;
 }
 
 .checkbox-container {
@@ -446,6 +447,7 @@ body {
   font-family: var(--base-font);
   margin: var(--scroll-spacing) auto;
   margin-bottom: 0;
+  min-width: 350px;
 }
 
 body::-webkit-scrollbar {
@@ -559,9 +561,9 @@ header {
   margin: 2rem 0;
 }
 
-.search-page-header {
+/* .search-page-header {
   height: 40vh;
-}
+} */
 
 .notification {
   font-weight: bold;
@@ -589,6 +591,10 @@ main {
 }
 
 /* Two level selectors******************************** */
+
+header h1 {
+  font-size: 3rem;
+}
 
 header .search-container {
   position: absolute;
@@ -809,7 +815,8 @@ footer .copyright {
 
 footer .footer-links {
   background: linear-gradient(rgba(136, 136, 136, 0.5), #383838);
-  height: 400px;
+
+  /* height: 400px; */
 }
 
 .contact :-ms-input-placeholder {
@@ -962,7 +969,7 @@ footer .footer-links ul {
   }
 
   header {
-    height: 65vh;
+    height: 70vh;
   }
 
   .follow {
@@ -1094,10 +1101,6 @@ footer .footer-links ul {
 }
 
 @media (max-width: 768px) {
-  .search-page-header {
-    height: 65vh;
-  }
-
   .menu-btn {
     display: block;
     color: white;
@@ -1192,5 +1195,11 @@ footer .footer-links ul {
 
   .search-page-header .search-container {
     top: 15%;
+  }
+}
+
+@media (max-width: 450px) {
+  header h1 {
+    font-size: 2.5rem;
   }
 }
