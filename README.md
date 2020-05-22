@@ -6,6 +6,10 @@ This project is a capstone project developed as a completion of HTML & CSS secti
 
 ![screenshot](./images/app_screenshot_desktop.gif)
 
+## Tablet
+
+![screenshot](./images/app_screenshot_tablet.gif)
+
 ## Mobile
 
 ![screenshot](./images/app_screenshot_mobile.gif)
