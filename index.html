@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mekina Global</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- end of menu toggler -->
+    <!-- header -->
+    <header>
+      <nav>
+        <!-- menu toggler  -->
+        <div class="menu-btn">
+          <div class="fas fa-bars fa-2x"></div>
+        </div>
+        <a href="index.html" class="logo-container">
+          <img class="logo" src="images/mekina-global-logo-light.png" alt="" />
+        </a>
+        <ul class="main-menu">
+          <li>
+            <a href="#" class="current-link">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-table"></i>
+              Collections
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i>
+              Purchase List
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              About
+            </a>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="post-add btn-rounded btn-custom-primary text-white"
+            >
+              Post an add
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="search-container d-md-flex flex-column align-items-center justify-content-center"
+      >
+        <h1
+          class="text-center font-weight-bold text-white mb-1 text-large"
+        >
+          Mekina Global
+        </h1>
+        <p class="text-center text-white font-weight-100 text-light">
+          Buy and Sell Cars at an Affordable Price!
+        </p>
+        <form
+          action="search.html"
+          class="d-flex flex-column flex-md-row md-align-items-center md-justify-content-center mt-5 search-form"
+        >
+          <div class="form-group mr-1 mb-4 mb-md-0">
+            <select
+              class="form-control input rounded-0 border-0"
+              id="allModels"
+            >
+              <option selected disabled>All Models</option>
+              <option>Kia Telluride</option>
+              <option>Chevrolet Corvette</option>
+              <option>Jeep Gladiator</option>
+              <option>Hyundai Palisade</option>
+              <option>Toyota GR Supra</option>
+            </select>
+          </div>
+          <div class="form-group mr-1 mb-4 mb-md-0">
+            <input
+              type="text"
+              class="form-control input rounded-0 border-0"
+              id="name"
+              placeholder="What do you search for?"
+            />
+          </div>
+          <div class="form-group mr-1 mb-md-0">
+            <input
+              type="text"
+              class="form-control input rounded-0 border-0"
+              id="amount"
+              placeholder="What is your budget?"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary input rounded-0 border-0 btn-search align-self-stretch align-self-md-center mt-2 mt-md-0"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </header>
+    <!-- end of header  -->
+
+    <!-- hot adds  -->
+    <div class="container">
+      <section class="pt-5 mt-md-5 d-md-block hot-adds text-dark position-relative">
+        <div class="container-fluid px-0 mx-0">
+          <!-- title  -->
+          <div class="row mb-4 px-0">
+            <h4
+              class="section-title font-weight-600 text-uppercase text-muted ml-4"
+            >
+              Hot ads
+            </h4>
+          </div>
+          <!-- end of title  -->
+          <!-- carousel  -->
+          
+          <div class="carousel slide  px-0" data-ride="carousel" id="hotAddsCarousel">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12 carousel-inner">
+                  <div class="carousel-item active mb-2">
+                    <div class="card border-0">
+                      <div class="row">
+                        <div class="col-md-7 mb-4 mb-md-0">
+                          <img
+                            src="images/MW-HU786_at_hyu_2019.jpg"
+                            class="img-fluid carousel-img"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-5 align-self-center">
+                          <h5 class="font-weight-bold">
+                            2020 Hyundai Palisade
+                          </h5>
+                          <p class="mb-1 small">
+                            Hyundai’s HYMTF, +19.02% 3-row midsize SUV is
+                            refined and comfortable, with features like a
+                            one-touch sliding second row.
+                          </p>
+                          <div class="d-flex">
+                            <p class="mr-2">
+                              By: <span class="text-muted">Chevrolet </span>
+                            </p>
+                            <p>Location: Asmara</p>
+                          </div>
+                          <button
+                            class="btn-custom btn-custom-primary mt-1 ml-auto"
+                          >
+                            $12,500
+                          </button>
+                          <button class="btn-custom btn-custom-primary mt-1">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item mb-2">
+                    <div class="card border-0">
+                      <div class="row">
+                        <div class="col-md-7 mb-4 mb-md-0">
+                          <img
+                            src="images/MW-HY840_tellur_2020.jpg"
+                            class="img-fluid carousel-img"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-5 align-self-center">
+                          <h5 class="font-weight-bold">2020 Kia Telluride</h5>
+                          <p class="mb-1 small">
+                            New Kia SUV proved to be all-day comfortable, with a
+                            supremely quiet ride that gobbled up the miles with
+                            graceful ease.
+                          </p>
+                          <div class="d-flex">
+                            <p class="mr-2">
+                              By: <span class="text-muted">Chevrolet </span>
+                            </p>
+                            <p>Location: Asmara</p>
+                          </div>
+                          <button
+                            class="btn-custom btn-custom-primary mt-1 ml-auto"
+                          >
+                            $12,500
+                          </button>
+                          <button class="btn-custom btn-custom-primary mt-1">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item mb-2">
+                    <div class="card border-0">
+                      <div class="row">
+                        <div class="col-md-7 mb-4 mb-md-0">
+                          <img
+                            src="images/MW-HU338_corvet_2019.jpg"
+                            class="img-fluid carousel-img"
+                            alt=""
+                          />
+                        </div>
+                        <div class="col-md-5 align-self-center">
+                          <h5 class="font-weight-bold">
+                            2020 Chevrolet Corvette
+                          </h5>
+                          <p class="mb-1 small">
+                            This
+                            supercar rival is powered by a 490-horsepower V-8
+                            engine that propels the ‘Vette from 0 to 60 in less
+                            than three seconds.
+                          </p>
+                          <div class="d-flex">
+                            <p class="mr-2">
+                              By: <span class="text-muted">Chevrolet </span>
+                            </p>
+                            <p>Location: Asmara</p>
+                          </div>
+                          <button
+                            class="btn-custom btn-custom-primary mt-1 ml-auto"
+                          >
+                            $58,999
+                          </button>
+                          <button class="btn-custom btn-custom-primary mt-1">
+                            <i class="fas fa-shopping-cart"></i> Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls d-flex justify-content-center">
+            <div class=" prev-col ">
+              <div
+                class="btn btn-outline-secondary prev border-0"
+                data-target="#hotAddsCarousel"
+                data-slide-to="0"
+              >
+                <i class="fa fa-lg fa-chevron-left"></i>
+              </div>
+            </div>
+            <div class="next-col ">
+              <div
+                class="btn btn-outline-secondary next border-0"
+                data-target="#hotAddsCarousel"
+                data-slide-to="0"
+              >
+                <i class="fa fa-lg fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <!-- carousel  -->
+        </div>
+      
+        
+      </section>
+    </div>
+    <!-- end of hot adds  -->
+
+    <!-- hot offers mt-4  -->
+    <section class="hot-offers mt-4 px-5 pb-0">
+      <h4 class="text-dark font-weight-bold mt-4 p-4 ml-2">Hot Offers</h4>
+      <div class="container-fluid">
+        <i
+          class="fa fa-lg fa-chevron-left fa-4x position-absolute d-lg-none"
+        ></i>
+        <i
+          class="fa fa-lg fa-chevron-right fa-4x position-absolute d-lg-none"
+        ></i>
+        <div class="hot-offers-carousel horizontal-scroll">
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/hot-offers/volkswagen-t-roc.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">Volkswagen T-Roc</h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top img-fluid"
+                src="images/hot-offers/land-rover-defender.png"
+                alt="Card image cap"
+              />
+            </a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$20,881</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                Land Rover Defender
+              </h5>
+              <p class="small mb-1">2020, Durable Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top img-fluid"
+                src="images/hot-offers/lexus-lc.png"
+                alt="Card image cap"
+              />
+            </a>
+
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$21,881</span>
+                <span class="bg-success p-1 small font-weight-bold no-wrap"
+                  >Good price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                Lexus LC
+              </h5>
+              <p class="small mb-1">2020, Durable Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top"
+                src="images/hot-offers/audi-a8.png"
+                alt="Card image cap"
+              />
+            </a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$19,991</span>
+                <span class="bg-success p-1 small font-weight-bold no-wrap"
+                  >Good price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                Audi A8
+              </h5>
+              <p class="small mb-1">2020, Durable Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top img-fluid"
+                src="images/hot-offers/jaguar-f-type.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$19,991</span>
+                <span class="bg-success p-1 small font-weight-bold no-wrap"
+                  >Good price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                Jaguar F-Type
+              </h5>
+              <p class="small mb-1">2020, Durable Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top img-fluid"
+                src="images/hot-offers/lexus-lc.png"
+                alt="Card image cap"
+              />
+            </a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$19,991</span>
+                <span class="bg-success p-1 small font-weight-bold no-wrap"
+                  >Good price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                BMW 8 Series
+              </h5>
+              <p class="small mb-1">2020, Durable Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top img-fluid"
+                src="images/hot-offers/audi-a8.png"
+                alt="Card image cap"
+              />
+            </a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$19,991</span>
+                <span class="bg-success p-1 small font-weight-bold no-wrap"
+                  >Good price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                BMW X1
+              </h5>
+              <p class="small mb-1">2020, Durable Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top img-fluid"
+                src="images/hot-offers/toyota-vellfire.png"
+                alt="Card image cap"
+              />
+            </a>
+
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$19,991</span>
+                <span class="bg-success p-1 small font-weight-bold no-wrap"
+                  >Good price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                Toyota VellfireBMW M8
+              </h5>
+              <p class="small mb-1">2020, Durable Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of hot offers  -->
+    <!-- Best MPG offers  -->
+    <section class="best-mpg px-5 pt-0">
+      <h4 class="text-dark font-weight-bold mt-4 p-4 ml-2">Best MPG</h4>
+      <div class="container-fluid">
+        <i
+          class="fa fa-lg fa-chevron-left fa-4x position-absolute d-lg-none"
+        ></i>
+        <i
+          class="fa fa-lg fa-chevron-right fa-4x position-absolute d-lg-none"
+        ></i>
+        <div class="hot-offers-carousel horizontal-scroll">
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc90tos112d021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Toyota RAV4
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc80chs111c021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Dodge Durango
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc80chs292e021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Chevrolet Traverse
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc80jes011a021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Jeep Wrangler
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc80lrs021c021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Land Rover Range Rover
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usd00tos142e021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Toyota Highlander
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc90chs091c021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Chevrolet Blazer
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top img-fluid"
+                src="images/hot-offers/toyota-vellfire.png"
+                alt="Card image cap"
+              />
+            </a>
+
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$19,991</span>
+                <span class="bg-success p-1 small font-weight-bold no-wrap"
+                  >Good price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                Toyota VellfireBMW M8
+              </h5>
+              <p class="small mb-1">2020, Durable Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Best MPG offers  -->
+    <!-- Trending around you  -->
+    <section class="trending px-5 pb-5 mt-0">
+      <h4 class="text-dark font-weight-bold mt-4 p-4 ml-2">
+        Trending Around You
+      </h4>
+      <div class="container-fluid">
+        <i
+          class="fa fa-lg fa-chevron-left fa-4x position-absolute d-lg-none"
+        ></i>
+        <i
+          class="fa fa-lg fa-chevron-right fa-4x position-absolute d-lg-none"
+        ></i>
+        <div class="hot-offers-carousel horizontal-scroll">
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc90tos112d021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Toyota RAV4
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc80chs111c021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Dodge Durango
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc80chs292e021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Chevrolet Traverse
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc80jes011a021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Jeep Wrangler
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc80lrs021c021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Land Rover Range Rover
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usd00tos142e021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Toyota Highlander
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#"
+              ><img
+                class="card-img-top"
+                src="images/popular-cars/usc90chs091c021001.png"
+                alt="Card image cap"
+            /></a>
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$17,991</span>
+                <span class="bg-warning p-1 small font-weight-bold no-wrap"
+                  >Fair price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                2020 Chevrolet Blazer
+              </h5>
+              <p class="small mb-1">2020, High Speed Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <a href="#">
+              <img
+                class="card-img-top img-fluid"
+                src="images/hot-offers/toyota-vellfire.png"
+                alt="Card image cap"
+              />
+            </a>
+
+            <div class="card-body py-0 pb-2 d-flex flex-column">
+              <p
+                class="card-text p-2 px-0 d-flex justify-content-between font-weight-bold border-bottom align-items-center"
+              >
+                <span>$19,991</span>
+                <span class="bg-success p-1 small font-weight-bold no-wrap"
+                  >Good price</span
+                >
+              </p>
+              <h5 class="card-title font-weight-bold my-1">
+                Toyota VellfireBMW M8
+              </h5>
+              <p class="small mb-1">2020, Durable Car</p>
+              <p class="small my-0">
+                <span>Consumer Rating</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </p>
+              <div class="d-flex align-items-end">
+                <a href="#">Details</a>
+                <button
+                  class="btn-custom btn-custom-primary ml-auto mt-1 align-self-start no-wrap"
+                >
+                  <i class="fas fa-shopping-cart"></i> Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Trending around you  -->
+
+    <section class="follow px-4">
+      <h5 class="py-4 pr-0 pl-2 ml-4 display-5">Follow Mekina Global</h5>
+      <a href="#"> <img src="images/social/social-facebookpng.png" alt="" /></a>
+      <a href="#"> <img src="images/social/social-linkedin.png" alt="" /></a>
+      <a href="#"> <img src="images/social/social-twitter.png" alt="" /></a>
+      <a href="#"> <img src="images/social/social-instagram.png" alt="" /></a>
+    </section>
+
+    <footer>
+      <div class="container-fluid footer-links py-4">
+        <div
+          class="container d-flex flex-column flex-md-row align-items-center justify-content-center"
+        >
+          <div class="footer-logo-container">
+            <img src="images/mekina-global-logo-light.png" alt="" />
+            <p class="pt-2 text-sm text-white">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, eos
+              praesentium. Illo saepe, suscipit minima iure itaque velit in
+              magnam!
+            </p>
+          </div>
+          <div class="py-4 mt-4">
+            <ul class="px-0 mt-4 pl-md-3">
+              <li class="custom-mr-1 mt-md-3 ml-0">
+                <a href="#">
+                  <i class="fas fa-home"></i>
+                  Home
+                </a>
+              </li>
+              <li class="custom-mr-1">
+                <a href="#">
+                  <i class="fas fa-table"></i>
+                  Collections
+                </a>
+              </li>
+
+              <li class="custom-mr-1">
+                <a href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  About Us
+                </a>
+              </li>
+              <li class="custom-mr-1">
+                <a href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  Contact Us
+                </a>
+              </li>
+              <li class="custom-mr-1">
+                <a href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  All Cars
+                </a>
+              </li>
+              <li class="custom-mr-1">
+                <a href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                  Advertise
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid text-white copyright text-center p-4">
+        <div class="row justify-content-center">
+          Copyright &copy; 2020 Mekina Global. All Right Reserved
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
