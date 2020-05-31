@@ -25,7 +25,7 @@ This project is a capstone project developed as a completion of HTML & CSS secti
 
 ## Live Demo
 
-<a href="https://rawcdn.githack.com/temesghentekeste/mekina-global/b2a06e2cadcbc569409e591100dcbeeca6477755/index.html">Live version</a>
+<a href="https://rawcdn.githack.com/temesghentekeste/mekina-global/4fca53c1bd9047deaa96eb019b789bb9068dae26/about.html">Live version</a>
 
 ## Author
 
