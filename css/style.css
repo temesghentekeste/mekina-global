@@ -969,7 +969,7 @@ footer .footer-links ul {
   }
 
   header {
-    height: 70vh;
+    height: 80vh;
   }
 
   .follow {
@@ -1201,5 +1201,16 @@ footer .footer-links ul {
 @media (max-width: 450px) {
   header h1 {
     font-size: 2.5rem;
+  }
+
+  header .search-container {
+    top: 20%;
+
+    /* padding: 0.3rem; */
+    text-align: center;
+  }
+
+  .search-page-header .search-container {
+    top: 22%;
   }
 }
