@@ -764,14 +764,15 @@ nav .logo-container {
 
 .contact {
   margin-top: 5rem;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       105deg,
       #383838 0%,
       rgba(56, 56, 56, 0.95) 50%,
       transparent 50%
     ),
     url('../images/contact/MW-HY837_at_gla_20200.jpg') no-repeat center
-      center/cover;
+    center/cover;
 
   /* background: linear-gradient(rgba(56, 56, 56, 0.95), rgba(56, 56, 56, 0.9)), url('../images/contact/MW-HY837_at_gla_20200.jpg') no-repeat center center/cover; */
 }
@@ -980,7 +981,7 @@ footer .footer-links ul {
   }
 
   header .search-container {
-    top:15%;
+    top: 15%;
     width: 100%;
     margin-bottom: 3rem;
     padding: 2rem;
@@ -1204,7 +1205,8 @@ footer .footer-links ul {
 
   header .search-container {
     top: 20%;
-    padding: 0.3rem;
+
+    /* padding: 0.3rem; */
     text-align: center;
   }
 
