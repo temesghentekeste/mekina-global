@@ -1204,9 +1204,7 @@ footer .footer-links ul {
   }
 
   header .search-container {
-    top: 20%;
-
-    /* padding: 0.3rem; */
+    top: 16%;
     text-align: center;
   }
 }
